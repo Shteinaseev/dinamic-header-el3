@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <svg style="display: none">
+        <filter id="glass-distortion">
+            <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="2" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="77" />
+        </filter>
+    </svg>
+    <nav class="navbar">
+        <div class="glass-filter"></div>
+        <div class="glass-overlay"></div>
+        <div class="glass-specular"></div>
+        <button class="burger-btn">
+            <i class='bxr bx-menu'></i> 
+        </button>
+        <ul>
+            <li>
+                <i class='bxr bx-home'></i> 
+                <a href="#">home</a>
+            </li>
+            <li>
+                <i class='bxr bx-shopping-bag-alt'></i> 
+                <a href="#">shop</a>
+            </li>
+            <li>
+                <i class='bxr bx-info-circle'></i> 
+                <a href="#">about</a>
+            </li>
+            <li>
+                <i class='bxr bx-help-circle'></i> 
+                <a href="#">help</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <ul class="menu-content">
+            <div class="glass-filter"></div>
+            <div class="glass-overlay"></div>
+            <div class="glass-specular"></div>
+            <li>
+                <i class='bxr bx-home'></i> 
+                <a href="#">home</a>
+            </li>
+            <li>
+                <i class='bxr bx-shopping-bag-alt'></i> 
+                <a href="#">shop</a>
+            </li>
+            <li>
+                <i class='bxr bx-info-circle'></i> 
+                <a href="#">about</a>
+            </li>
+            <li>
+                <i class='bxr bx-help-circle'></i> 
+                <a href="#">help</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
