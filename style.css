@@ -219,3 +219,18 @@ body {
     font-size: 1.4rem;
     line-height: 1.2;
 }
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce),
+       (max-width: 480px) and (max-device-width: 480px) {
+  .glass-filter {
+    backdrop-filter: blur(4px) saturate(110%) !important;
+    filter: none !important;           /* ← отключаем svg distortion полностью */
+  }
+}
